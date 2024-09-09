@@ -17,25 +17,21 @@ header{
         width: 100px;
     }
 
-    #carouselExampleFade{
-        display: flex;
-        width: 100%;
-        height: 45%;
-        justify-content: center;
-        align-items: center;
-        
-        img{
-            width: 100%;
-            height: 45%;
-            object-fit: cover;
-        }
+    .container{
+        padding-top: 20px;
     }
+
+}
+
+body{
+    background-color: whitesmoke;
 }
 
 main{
-    margin-top: 30px;
+    margin: 10px 20px;
     color: black;
-    
+    background-color: whitesmoke;
+
     h1{
         text-align: center;
     }
@@ -45,10 +41,59 @@ main{
         margin-left: 20px;
         margin-right: 20px;
     }
+    
+    .artistas {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 50px;
+    }
 
-    .card{
+/* etiquetas contactos */
+
+    .tit-consul{
+        margin-top: 20px;
+    }
+
+    .text-consul{
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .consultas{
+        padding: 20px;
+    }
+
+/* etiquetas eventos */ 
+    
+    .main-eventos {
         display: grid;
-        grid-template-rows: 4fr ;
+        height: 80vh; 
+        grid-template-columns: 1fr ;
+        grid-template-rows: repeat(4, 20%);
+        align-content: center;
+        row-gap: 20px;
+    }
+
+    .pic {   
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        padding-top: 20px;
+}
+    .tit-eventos{
+        padding-left: 20px;
+        
+    }
+
+/* etiquetas sobre nosotros */
+
+    .tit-sobre2{
+        padding-left: 20px;
+
+
     }
 
 }
@@ -56,8 +101,9 @@ main{
 /* estilos del footer */
 footer {
     color: black;
-    text-align: center;
+    text-align: end;
+    padding-right: 20px;
+
 }
 
 
-/* estilos de pagina artistas */
